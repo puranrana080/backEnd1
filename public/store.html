@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+</head>
+
+<body>
+    <h1>Welcome to the Store</h1>
+
+    <form onsubmit="handleFormSubmit(event)" action="/add-item">
+        <label for="itemName">Item Name</label>
+        <input type="text" id="ItemName" name="itemName">
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description">
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity">
+
+        <button type="submit">Add Item</button>
+
+    </form>
+
+    <ul>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.min.js"
+        integrity="sha512-01Pe9P3mJM/4c80VuoYEGHlspKGbd9uWQe9HtdLsdTqV0CS1kz8ca44sinVEXEvlZNciMmsAjeEbm5ZxHC7yYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="store.js"></script>
+</body>
+
+</html>
